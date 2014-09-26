@@ -1,0 +1,25 @@
+      {% include header.html %}
+
+      <div class="row">
+        <div class="col-sm-8">
+          {{ content }}
+        </div>
+        <div class="col-sm-4">
+          {% include sidebar.html %}
+        </div>
+      </div>
+
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+            <a href="/" class="previous">Newer</a>
+          {% else %}
+            <a href="/page{{ paginator.previous_page }}" class="previous">Newer</a>
+          {% endif %}
+        {% endif %}
+        {% if paginator.next_page %}
+          <a href="/page{{ paginator.next_page }}" class="next">Older</a>
+        {% endif %}
+      </div>
+
+      {% include footer.html %}

@@ -1,0 +1,7 @@
+name: "Fowlie's blog"
+description: "Just another blog"
+paginate: 2
+url: "http://localhost:4000"
+
+# Outputting
+paginate_path: /page:num
