@@ -10,4 +10,4 @@ I came across [this post](http://www.practicalgradle.org/blog/2011/06/incrementa
 * Your build script will be a little shorter and a little cleaner
 * I finally have something to blog about, besides how I created the blog
 
-Checkout the GitHub page for the plugin: https://github.com/fowlie/gradle-jenkins-test
+Checkout the [GitHub page](https://github.com/fowlie/gradle-jenkins-test) for the plugin :-)
