@@ -1,6 +1,6 @@
 name: "Fowlie's blog"
 description: "Just another blog"
-paginate: 2
+paginate: 5
 url: "http://localhost:4000"
 highlighter: pygments
 
