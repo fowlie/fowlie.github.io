@@ -2,4 +2,4 @@ sudo: false
 language: ruby
 
 install: gem install jekyll
-script: jekyll build
+script: bundle install && jekyll build
