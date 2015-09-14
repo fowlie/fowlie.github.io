@@ -2,4 +2,4 @@ sudo: false
 language: ruby
 
 install: gem install jekyll
-script: bundle install nokogiri && jekyll build
+script: jekyll build
