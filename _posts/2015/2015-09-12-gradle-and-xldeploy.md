@@ -1,6 +1,7 @@
 ---
 title: gradle and xldeploy
 layout: post
+comments: true
 ---
 Our company uses [XLDeploy](https://xebialabs.com/products/xl-deploy) from XebiaLabs to deploy apps and configurations. In order to create a deployment we need to create and import a so called dar package. XLDeploy will then figure out which parts of the archive has changed based on checksums and only deploy those. We previously used a maven plugin to generate the dar package, but we ended up with a very long and repetative pom file since we have more than 20 modules in one dar. Sometimes we would get problems with the deployments because we had typos in the pom. It was not nice.
 
