@@ -6,7 +6,10 @@ layout: list
 <div class="row-fluid">
   <div class="span12">
     <h2>{{ post.title | truncatewords: 10 | capitalize }}</h2>
-    <h4>{{ post.date | date_to_long_string }}</h4>
+    <h4>
+      <small><span class="glyphicon glyphicon-time"></span> {{ post.date | date_to_long_string }}
+      <span class="glyphicon glyphicon-comment"></span> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">0 Comments</span></small>
+    </h4>
     <div>{{ post.content | truncatewords: 50 }}</div>
     <p>
       <a href="{{ post.url }}">Read More</a>
