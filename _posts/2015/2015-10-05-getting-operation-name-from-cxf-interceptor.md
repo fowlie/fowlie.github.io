@@ -7,7 +7,7 @@ In my current project we are using CXF and its logging interceptors to automatic
 
 ## Refreshing my regex skills
 So get around this I wrote a method that would take the log message as input, and use regex to extract the first tag that comes after the soap body tag. As most other developers, I have used regex some times but not often enough so I had to get some help from [regex101.com](https://regex101.com/). Here is the whole method:
-{% highlight java linenos %}
+```java
     String getOperationName(String xml) {
         Matcher matcher = Pattern.compile("(<\\w*:?Body[^>]*>)([^<]*)(<.+?>)").matcher(xml);
         if (!matcher.find()) return "";
@@ -16,7 +16,7 @@ So get around this I wrote a method that would take the log message as input, an
         xmlTagName = xmlTagName.contains(" ") ? xmlTagName.split(" ")[0] : xmlTagName;
         return xmlTagName.contains(":") ? xmlTagName.split(":")[1] : xmlTagName;
     }
-{% endhighlight %}
+```
 
 The regex expression here is divided into three groups. The first one will match the soap body tag with any prefix namespace and attributes. The second group means zero or more repetitions of any sign but <. The third group will match the tag we're interested in. Line #4 is getting the the result from group 3, and line #5 is removing the <> signs and also remove a forward slash in case the tag is closed like <someTag/>. Next line will split by a whitespace in case the tag had attributes on it, and the last line will skip any prefix namespace.
 
