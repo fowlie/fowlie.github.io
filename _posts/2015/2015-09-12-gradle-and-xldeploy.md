@@ -12,7 +12,7 @@ The idea is to place all artifacts and the xml manifest file in a temporary fold
 
 ## Configure the war task
 Here we let the war task put all war files in the build/dar folder.
-{% highlight groovy linenos %}
+{% highlight groovy %}
 war {
   destinationDir file("${parent.buildDir}/dar")
 }
@@ -51,7 +51,7 @@ task darManifest {
 
 ## Zip it!
 The dar package is really just a zip file with another extension. Easy, we just use the extension property on the zip task. The result of this task is a file in build/libs called webshop.dar.
-{% highlight groovy linenos %}
+{% highlight groovy %}
 task dar (dependsOn: darManifest, type: Zip) {
     inputs.dir file(buildDir.path + '/dar')
     from buildDir.path + '/dar'
@@ -65,11 +65,12 @@ task dar (dependsOn: darManifest, type: Zip) {
 Building the deployment artifacts is a job for the build server. You don't wanna end up in a situation where your prod servers are running packages built from someones local machine. Who knows what kind of state the source was in at his or hers computer? Having that said, there are multiple ways of importing the dar package into XLDeploy. If you're running Jenkins, you could use the [XL Deploy Plugin](https://wiki.jenkins-ci.org/display/JENKINS/XL+Deploy+Plugin). You can also use XLDeploy's REST API, and I'll show you how.
 {% highlight groovy %}
 task uploadDarPackage(dependsOn: dar, type: Exec) {
-  commandLine 'sh', 'uploadDar.sh', dar.outputs.files[0]
+    commandLine 'sh', 'uploadDar.sh', dar.outputs.files[0]
 }
 {% endhighlight %}
 uploadDar.sh
-{% highlight bash %}
+{% highlight shell %}
 #!/bin/sh
-curl -u <username>:<password> -X POST -H "content-type:multipart/form-data" http://<host>:<port>/deployit/package/upload/tmp.dar -F fileData=@$1
+curl -u <username>:<password> -X POST -H "content-type:multipart/form-data" \
+http://<host>:<port>/deployit/package/upload/tmp.dar -F fileData=@$1
 {% endhighlight %}
