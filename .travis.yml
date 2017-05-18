@@ -1,5 +1,8 @@
 sudo: false
+
 language: ruby
+rvm:
+  - 2.2
 
 install: gem install jekyll
 script: bundle install && jekyll build
