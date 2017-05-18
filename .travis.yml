@@ -3,3 +3,7 @@ language: ruby
 
 install: gem install jekyll
 script: bundle install && jekyll build
+
+notifications:
+  email:
+    - mats.faugli@gmail.com
