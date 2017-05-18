@@ -56,7 +56,6 @@
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <li{% if location == 'index.html' %} class="active"{% endif %}><a href="/">Blog</a></li>
           <li{% if location == 'music' %} class="active"{% endif %}><a href="/music">Music</a></li>
-          <li{% if location == 'photography' %} class="active"{% endif %}><a href="/photography">Photography</a></li>
           <li{% if location == 'about' %} class="active"{% endif %}><a href="/about">About</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
