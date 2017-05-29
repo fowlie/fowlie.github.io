@@ -2,10 +2,14 @@
 
       <div class="row">
         <div class="col-sm-8">
-          {{ content }}
+          <div class="container-fluid row-fluid panel panel-default">
+            {{ content }}
+          </div>
         </div>
-        <div class="col-sm-4">
-          {% include sidebar.html %}
+        <div class="col-sm-4 panelt">
+          <div class="container-fluid row-fluid panel panel-default">
+            {% include sidebar.html %}
+          </div>
         </div>
       </div>
 
