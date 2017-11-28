@@ -1,0 +1,24 @@
+---
+pages:
+- _posts/2017/2017-08-25-deploy-spring-boot-on-digitialocean.md
+hide_body: false
+fields:
+- type: text
+  name: title
+  config:
+    required: true
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - post
+    - default
+    - list
+  name: layout
+  default: post
+- type: boolean
+  name: comments
+- type: datetime
+  name: date
