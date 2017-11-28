@@ -2,10 +2,10 @@ sudo: false
 
 language: ruby
 rvm:
-  - 2.2
+  - 2.3.3
 
 install: gem install jekyll
-script: bundle install && jekyll build
+script: bundle exec jekyll build
 
 notifications:
   email:
