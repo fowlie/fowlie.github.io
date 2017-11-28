@@ -1,5 +1,5 @@
 ---
-title: jump to server and change user without password
+title: jump to server and change user without passwords
 layout: post
 date: 2017-11-28 00:00:00 +0000
 comments: true
@@ -100,8 +100,7 @@ Now when I save this as /usr/local/bin/passjump, I can do
 ```bash
 passjump appserver01 appuser
 ``` 
-to get an interactive shell without typing a single password! Or, I can do 
+to get an interactive shell without typing a single password! :heart_eyes: :star: Or, I can do 
 ```bash
 passjump appserver01 appuser tail -f /var/log/some.log
 ```
-:heart_eyes: :star:
