@@ -9,72 +9,56 @@
     })(window,document,'script','dataLayer','GTM-MGHSQF7');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <title>{{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
-
-    <link href="/css/bootstrap.css" rel="stylesheet" />
-    <link href="/css/fullpage-background.css" rel="stylesheet" />
-    <link href="/css/highlighting-default.css" rel="stylesheet" />
-    <link href="/css/pagination.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
-    <style>
-      body {
-        padding-top: 100px;
-        font-family: "Open Sans",serif;
-        font-size: 18px;
-      }
-      .panel {
-        background-color: rgba(255, 255, 255, 0.7);
-      }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>{{ site.name }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGHSQF7"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGHSQF7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
 
-    ga('create', 'UA-67513271-1', 'auto');
-    ga('send', 'pageview');
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  </script>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a href="/" class="navbar-brand">{{ site.name }}</a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+      ga('create', 'UA-67513271-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <div>
+      <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container">
+          <a class="navbar-brand" href="/">{{ site.name }}</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav mr-auto">
+              {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+              <li {% if location == '' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link active" href="https://fowlie.github.io">Blog </a></li>
+              <li{% if location == 'music' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="music">Music </a></li>
+              <li{% if location == 'aboutme' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="aboutme">About me</a></li>
+            </ul>
+            <span class="navbar-text">
+              <a href="https://github.com/fowlie/fowlie.github.io"><img src="/images/GitHub-Mark-32px.png" width="16" height="16">Source</a>
+            </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <header style="background-image:url(&quot;assets/img/background.jpg&quot;);">
+      <div class="container" id="welcome">
+        <h1>Fowlie's blog</h1>
+        <p>A place for web technology, unix and music.</p>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
-          <li{% if location == '' %} class="active"{% endif %}><a href="/">Blog</a></li>
-          <li{% if location == 'music' %} class="active"{% endif %}><a href="/music">Music</a></li>
-          <li{% if location == 'about' %} class="active"{% endif %}><a href="/about">About</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/fowlie/fowlie.github.io"><img style="position:relative;top:-2px;" src="/images/GitHub-Mark-Light-16px.png"> Source</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-    <div class="container">
+    </header>

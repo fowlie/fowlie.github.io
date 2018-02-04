@@ -1,9 +1,9 @@
       {% include header.html %}
 
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
           <div class="container-fluid row-fluid panel panel-default">
-            <h1>{{ page.title | capitalize }}</h1>
+            <h2>{{ page.title | capitalize }}</h2>
             <h4>
               <small><span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_long_string }}
               <span class="glyphicon glyphicon-comment"></span> <span class="disqus-comment-count" data-disqus-identifier="{{ page.url }}">0 Comments</span></small>
@@ -24,11 +24,6 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             {% endif %}
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="container-fluid row-fluid panel panel-default">
-            {% include sidebar.html %}
           </div>
         </div>
       </div>

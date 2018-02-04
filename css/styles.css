@@ -1,0 +1,45 @@
+img {
+  margin-right:5px;
+  margin-top:-3px;
+}
+
+#welcome {
+  margin:0 auto;
+  text-align:center;
+  color:#e0efff;
+}
+
+header {
+  background-size:cover;
+}
+
+#welcome {
+  padding:40px;
+}
+
+@media (min-width: 700px) {
+  #welcome {
+    padding:80px;
+  }
+}
+
+@media (min-width: 900px) {
+  #welcome {
+    padding:160px;
+  }
+}
+
+.post {
+  color:#666666;
+  margin-top:40px;
+}
+
+#posts .btn {
+  margin-top:40px;
+}
+
+.post a {
+  color:#666;
+  font-weight:200;
+}
+
