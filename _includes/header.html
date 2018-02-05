@@ -44,9 +44,9 @@
           <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav mr-auto">
               {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
-              <li {% if location == '' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link active" href="https://fowlie.github.io">Blog </a></li>
-              <li{% if location == 'music' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="music">Music </a></li>
-              <li{% if location == 'aboutme' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="aboutme">About me</a></li>
+              <li {% if location == '' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link active" href="/">Blog</a></li>
+              <li{% if location == 'music' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="/music">Music</a></li>
+              <li{% if location == 'aboutme' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="/aboutme">About me</a></li>
             </ul>
             <span class="navbar-text">
               <a href="https://github.com/fowlie/fowlie.github.io"><img src="/images/GitHub-Mark-32px.png" width="16" height="16">Source</a>
