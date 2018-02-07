@@ -9,6 +9,7 @@ paginate: 5
 url: "http://localhost:4000"
 markdown: kramdown
 highlighter: rouge
+permalink: pretty
 
 # Outputting
 paginate_path: /page:num
