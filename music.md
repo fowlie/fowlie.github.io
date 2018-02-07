@@ -1,6 +1,7 @@
 ---
 title: Music
 layout: default
+permalink: /music/
 ---
 # My favorite albums
 
