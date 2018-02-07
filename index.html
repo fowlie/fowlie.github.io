@@ -7,8 +7,8 @@ layout: list
   <div class="post">
     <a href="{{ post.url }}"><h2>{{ post.title | truncatewords: 10 | capitalize }}</h2></a>
     <h4><small>
-      <span class="glyphicon glyphicon-time"></span> {{ post.date | date_to_long_string }}
-      <span class="glyphicon glyphicon-comment"></span> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">0 Comments</span>
+      <i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }}
+      <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">0 Comments</span>
     </small></h4>
     <div>{{ post.content | truncatewords: 50 }}</div>
     <p><a href="{{ post.url }}">Read More</a></p>
