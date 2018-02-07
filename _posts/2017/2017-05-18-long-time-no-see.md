@@ -8,7 +8,7 @@ Today is the day after celebrating Norway's national day with my girlfriend and 
   <div class="col-md-6">
     <div class="thumbnail">
       <a href="/images/family.jpg">
-        <img src="/images/family.jpg" class="img-responsive" alt="Family">
+        <img src="/images/family.jpg" class="img-thumbnail" alt="Family">
         <div class="caption">
           <p>Two new family members :baby: :girl:</p>
         </div>
@@ -18,7 +18,7 @@ Today is the day after celebrating Norway's national day with my girlfriend and 
   <div class="col-md-6">
     <div class="thumbnail">
       <a href="/images/house.jpg">
-        <img src="/images/house.jpg" class="img-responsive" alt="House">
+        <img src="/images/house.jpg" class="img-thumbnail" alt="House">
         <div class="caption">
           <p>Our house, will be finished this summer :house_with_garden:</p>
         </div>

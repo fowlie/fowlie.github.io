@@ -4,7 +4,7 @@ layout: default
 ---
 # About Me
 
-<img src="/images/fowlie.png" class="img-responsive">
+<img src="/images/fowlie.png" class="img-thumbnail">
 
 My passion for tech started when I wanted to build my own website at age 14. I quickly learned about HTML and JavaScript, then I touched into Perl, Pascal Delphi, and PHP. I took a bachelors degree in Embedded Systems at [HIBU](https://www.usn.no/om-hsn/campus/kongsberg) which focused on engineering, software and hardware.
 
