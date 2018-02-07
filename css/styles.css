@@ -39,7 +39,7 @@ header {
   margin-top:40px;
 }
 
-.post a {
+h1,h2 a {
   color:#666;
   font-weight:200;
 }
