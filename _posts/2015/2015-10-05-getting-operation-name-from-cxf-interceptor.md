@@ -18,7 +18,12 @@ String getOperationName(String xml) {
 }
 ```
 
-The regex expression here is divided into three groups. The first one will match the soap body tag with any prefix namespace and attributes. The second group means zero or more repetitions of any sign but <. The third group will match the tag we're interested in. Line #4 is getting the the result from group 3, and line #5 is removing the <> signs and also remove a forward slash in case the tag is closed like <someTag/>. Next line will split by a whitespace in case the tag had attributes on it, and the last line will skip any prefix namespace.
+The regex expression here is divided into three groups. 
+* The first one will match the soap body tag with any prefix namespace and attributes. 
+* The second group means zero or more repetitions of any sign but <. 
+* The third group will match the tag we're interested in. 
+
+Line #4 is getting the the result from group 3, and line #5 is removing the <> signs and also remove a forward slash in case the tag is closed like <someTag/>. Next line will split by a whitespace in case the tag had attributes on it, and the last line will skip any prefix namespace.
 
 ## What about the inbound message?
 This technique works fine on the outgoing message, but when we are dealing with the web service response, we don't have the operation name available in the soap message. The solution is to store the operation name in a hash map on the message object like this:
