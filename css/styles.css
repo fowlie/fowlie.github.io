@@ -6,7 +6,19 @@ img {
 #welcome {
   margin:0 auto;
   text-align:center;
-  color:#e0efff;
+  color:#fff;
+}
+
+#welcome h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #333;
+}
+
+#welcome p {
+  font-family: monospace;
+  background-color: black;
+  padding: 4px;
+  display: inline-block;
 }
 
 header {
