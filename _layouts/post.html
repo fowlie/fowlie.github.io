@@ -5,6 +5,7 @@ layout: default
   <h1>{{ page.title | capitalize }}</h1>
   <h4>
     <small><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}
+    <i class="fa fa-clock-o"></i> {{ content | number_of_words | divided_by: 150}} minute read 
     <span class="fa fa-comments"></span> <span class="disqus-comment-count" data-disqus-identifier="{{ page.url }}">0 Comments</span></small>
   </h4>
   {{ content }}

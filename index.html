@@ -5,13 +5,13 @@ layout: list
 <section id="posts">
   {% for post in paginator.posts limit: 10 %}
   <div class="post">
-    <a href="{{ post.url }}"><h1>{{ post.title | truncatewords: 10 | capitalize }}</h1></a>
-    <h4><small>
-      <i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }}
+    <small>
+      <i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }} 
+      <i class="fa fa-clock-o"></i> {{ post.content | number_of_words | divided_by: 150}} minute read 
       <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">0 Comments</span>
-    </small></h4>
-    <div>{{ post.content | truncatewords: 50 }}</div>
-    <p><a href="{{ post.url }}">Read More</a></p>
+    </small>
+    <a href="{{ post.url }}"><h1>{{ post.title | truncatewords: 10 | capitalize }}</h1></a>
+    <div>{{ post.content | split : ". " | first }} ...</div>
   </div>
   {% endfor %}
 </section>
