@@ -5,7 +5,7 @@ gems:
   - jekyll-paginate
   - jemoji
 
-paginate: 5
+paginate: 30
 url: "http://localhost:4000"
 markdown: kramdown
 highlighter: rouge

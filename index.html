@@ -3,7 +3,7 @@ layout: list
 ---
 
 <section id="posts">
-  {% for post in paginator.posts limit: 10 %}
+  {% for post in paginator.posts %}
   <div class="post">
     <small>
       <i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }} 
@@ -11,7 +11,7 @@ layout: list
       <i class="fa fa-comments"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">0 Comments</span>
     </small>
     <a href="{{ post.url }}"><h1>{{ post.title | truncatewords: 10 | capitalize }}</h1></a>
-    <div>{{ post.content | split : ". " | first }} ...</div>
+    <div>{{ post.content | split : ". " | first | strip_html }} ...</div>
   </div>
   {% endfor %}
 </section>
