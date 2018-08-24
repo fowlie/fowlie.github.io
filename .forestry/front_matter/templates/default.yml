@@ -23,6 +23,6 @@ fields:
 - type: datetime
   name: date
 pages:
-- _posts/winning-algorithm-for-tic-tac-toe-using-a-3x3-magic-square.md
+- _posts/2018-08-24-winning-algorithm-for-tic-tac-toe-using-a-3x3-magic-square.md
 - _posts/2017/2017-08-25-deploy-spring-boot-on-digitialocean.md
 - _posts/2017/2017-11-28-jump-to-server-and-change-user-without-password-with-pass-and-expect-and-bash.md
