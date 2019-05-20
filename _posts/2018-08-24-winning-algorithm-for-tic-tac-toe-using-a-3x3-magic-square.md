@@ -32,9 +32,10 @@ class TicTacToe {
         for (int i = 0; i < 9; i++)
             for (int j = 0; j < 9; j++)
                 for (int k = 0; k < 9; k++)
-                    if (board[i] == player && board[j] == player && board[k] == player)
-                        if (magicSquare[i] + magicSquare[j] + magicSquare[k] == 15)
-                            return true;
+                    if (i != j && i != k && j != k)
+                        if (board[i] == player && board[j] == player && board[k] == player)
+                            if (magicSquare[i] + magicSquare[j] + magicSquare[k] == 15)
+                                return true;
         return false;
     }
 }
