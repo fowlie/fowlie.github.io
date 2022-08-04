@@ -1,7 +1,7 @@
 name: "Fowlie's blog"
 description: "Just another blog"
 
-gems:
+plugins:
   - jekyll-paginate
   - jemoji
 
@@ -13,3 +13,8 @@ permalink: pretty
 
 # Outputting
 paginate_path: /page:num
+
+collections:
+  ergomech-keyboards:
+    output: true
+    permalink: /:collection/:name

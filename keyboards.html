@@ -1,0 +1,54 @@
+---
+title: 3x5+3 ErgoMech Keyboards
+layout: default
+permalink: /ergomech-keyboards/
+---
+<h1>3x5+3 ErgoMech Keyboards</h1>
+
+Here is a list of {{ site.ergomech-keyboards | size }} open source 3x5+3 keyboards.
+It's nowhere a complete overview on what's out there,
+but I will be adding more and more whenever I have time.
+
+<section class="grid">
+  {% for keyboard in site.ergomech-keyboards %}
+  <keyboard>
+    <a href="{{ keyboard.url }}">
+      <img class="img-thumbnail" src="/images/keyboards/{{ keyboard.slug }}.jpg" />
+    </a>
+    <div class="text">
+      <a href="{{ keyboard.url }}">
+        <h3>{{ keyboard.name }}</h3>
+      </a>
+
+      {% if keyboard.author_reddit %}
+      <i class="icon ion-social-reddit">
+        <a href="https://reddit.com/user/{{ keyboard.author_reddit }}">
+          /u/{{ keyboard.author_reddit }}
+        </a>
+      </i>
+      {% endif %}
+
+      {% if keyboard.diodeless %}
+      <div>
+        Diodeless
+      </div>
+      {% endif %}
+
+      <div>
+        Controller: {{ keyboard.controller }}
+      </div>
+
+      <div>
+        Stagger: {{ keyboard.stagger }}
+      </div>
+
+      {% if keyboard.modules %}
+      <div>
+        Extra: {{ keyboard.modules }}
+      </div>
+      {% endif %}
+
+    </div>
+  </keyboard>
+  {% endfor %}
+</section>

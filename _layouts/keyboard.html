@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="page">
+  <h1>{{ page.name | capitalize }}</h1>
+  <img src="/images/keyboards/{{ page.slug }}.jpg" class="img-thumbnail" />
+
+  {% if page.author_reddit %}
+  <i class="icon ion-social-reddit">
+    <a href="https://reddit.com/user/{{ page.author_reddit }}">
+      /u/{{ page.author_reddit }}
+    </a>
+  </i>
+  {% endif %}
+
+  {% if page.diodeless %}
+  <div>
+    Diodeless
+  </div>
+  {% endif %}
+
+  <div>
+    Controller: {{ page.controller }}
+  </div>
+
+  <div>
+    Stagger: {{ page.stagger }}
+  </div>
+
+  {% if page.extra %}
+  <div>
+    Extra: {{ page.extra }}
+  </div>
+  {% endif %}
+
+  <div>
+    Website: <a href="{{ page.website }}" target="_blank">{{ page.website }}</a>
+  </div>
+
+  <p>{{ content }}</p>
+
+  <a href="/ergomech-keyboards">Back to list</a>
+</div>

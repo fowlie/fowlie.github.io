@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MGHSQF7');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | capitalize | default: site.name }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/highlighting-default.css">
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGHSQF7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
 
-    <!-- End Google Tag Manager (noscript) -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MGHSQF7');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | capitalize | default: site.name }}</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/highlighting-default.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-      ga('create', 'UA-67513271-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGHSQF7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
 
-    <div>
-      <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-        <div class="container">
-          <a class="navbar-brand" href="/">{{ site.name }}</a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav mr-auto">
-              {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
-              <li {% if location == '' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link active" href="/">Blog</a></li>
-              <li{% if location == 'music' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="/music">Music</a></li>
-              <li{% if location == 'aboutme' %} class="active"{% endif %} class="nav-item" role="presentation"><a class="nav-link" href="/aboutme">About me</a></li>
-            </ul>
-            <span class="navbar-text">
-              <a href="https://github.com/fowlie/fowlie.github.io"><img src="/images/GitHub-Mark-32px.png" width="16" height="16">Source</a>
-            </span>
-            </div>
+  <!-- End Google Tag Manager (noscript) -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-67513271-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <div>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+      <div class="container">
+        <a class="navbar-brand" href="/">{{ site.name }}</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav mr-auto">
+            {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+            <li {% if location=='' %} class="active" {% endif %} class="nav-item" role="presentation">
+              <a class="nav-link" href="/">Blog</a>
+            </li>
+            <li {% if location=='ergomech-keyboards' %} class="active" {% endif %} class="nav-item" role="presentation">
+              <a class="nav-link" href="/ergomech-keyboards">ErgoMech Keyboards</a>
+            </li>
+            <li {% if location=='music' %} class="active" {% endif %} class="nav-item" role="presentation">
+              <a class="nav-link" href="/music">Music</a>
+            </li>
+            <li {% if location=='aboutme' %} class="active" {% endif %} class="nav-item" role="presentation">
+              <a class="nav-link" href="/aboutme">About me</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="https://github.com/fowlie/fowlie.github.io"><img src="/images/GitHub-Mark-32px.png" width="16"
+                height="16">Source</a>
+          </span>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
-    {% if page.show_intro %}
-        {% include /intro.html %}
-    {% endif %}
+  {% if page.show_intro %}
+  {% include /intro.html %}
+  {% endif %}
 
-    <div class="container">
-  	  {{ content }}
-    </div>
-      
-    <div class="footer-basic">
-      <footer>
-        <div class="social">
-          <a href="https://www.linkedin.com/in/mats-faugli"><i class="icon ion-social-linkedin"></i></a>
-          <a href="https://twitter.com/matsfaugli"><i class="icon ion-social-twitter"></i></a>
-          <a href="https://www.facebook.com/mats.faugli"><i class="icon ion-social-facebook"></i></a>
-        </div>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="/">Blog</a></li>
-          <li class="list-inline-item"><a href="/music">Music</a></li>
-          <li class="list-inline-item"><a href="/aboutme">About me</a></li>
-          <li class="list-inline-item"><a href="https://github.com/fowlie/fowlie.github.io">Source</a></li>
-        </ul>
-        <p class="copyright">Mats Faugli © {{ site.time | date: '%Y' }}</p>
-      </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      var disqus_shortname = 'fowlie';
+  <div class="container">
+    {{ content }}
+  </div>
 
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function () {
+  <div class="footer-basic">
+    <footer>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/mats-faugli"><i class="icon ion-social-linkedin"></i></a>
+        <a href="https://twitter.com/matsfaugli"><i class="icon ion-social-twitter"></i></a>
+        <a href="https://github.com/fowlie"><i class="icon ion-social-github"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/">Blog</a></li>
+        <li class="list-inline-item"><a href="/ergomech-keyboards">ErgoMech Keyboards</a></li>
+        <li class="list-inline-item"><a href="/music">Music</a></li>
+        <li class="list-inline-item"><a href="/aboutme">About me</a></li>
+        <li class="list-inline-item"><a href="https://github.com/fowlie/fowlie.github.io">Source</a></li>
+      </ul>
+      <p class="copyright">Mats Faugli © {{ site.time | date: '%Y' }}</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var disqus_shortname = 'fowlie';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
       var s = document.createElement('script'); s.async = true;
       s.type = 'text/javascript';
       s.src = '//' + disqus_shortname + '.disqus.com/count.js';
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-    </script>
-  </body>
+    }());
+  </script>
+</body>
+
 </html>
