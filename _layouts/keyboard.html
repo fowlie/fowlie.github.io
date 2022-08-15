@@ -13,6 +13,14 @@ layout: default
   </i>
   {% endif %}
 
+  {% if page.author_github %}
+  <i class="icon ion-social-github">
+    <a href="https://github.com/user/{{ page.author_github }}">
+      {{ page.author_github }}
+    </a>
+  </i>
+  {% endif %}
+
   {% if page.diodeless %}
   <div>
     Diodeless

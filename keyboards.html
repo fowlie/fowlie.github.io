@@ -28,6 +28,14 @@ but I will be adding more and more whenever I have time.
       </i>
       {% endif %}
 
+      {% if keyboard.author_github %}
+      <i class="icon ion-social-github">
+        <a href="https://github.com/user/{{ keyboard.author_github }}">
+          {{ keyboard.author_github }}
+        </a>
+      </i>
+      {% endif %}
+
       {% if keyboard.diodeless %}
       <div>
         Diodeless
