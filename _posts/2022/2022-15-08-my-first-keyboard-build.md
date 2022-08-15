@@ -1,7 +1,7 @@
 ---
 title: my first keyboard build
 layout: post
-date: 2022-08-03 00:00:00 +0000
+date: 2022-08-15 00:00:00 +0000
 comments: true
 ---
 After my last blog post I gave up trying to find the perfect keymap layout.
