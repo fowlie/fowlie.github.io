@@ -1,11 +1,11 @@
 ---
-title: 3x5+3 ErgoMech Keyboards
+title: ErgoMech Keyboards
 layout: default
 permalink: /ergomech-keyboards/
 ---
-<h1>3x5+3 ErgoMech Keyboards</h1>
+<h1>ErgoMech Keyboards</h1>
 
-Here is a list of {{ site.ergomech-keyboards | size }} open source 3x5+3 keyboards.
+Here is a list of {{ site.ergomech-keyboards | size }} open source ergosplit keyboards.
 It's nowhere a complete overview on what's out there,
 but I will be adding more and more whenever I have time.
 
@@ -34,6 +34,12 @@ but I will be adding more and more whenever I have time.
           {{ keyboard.author_github }}
         </a>
       </i>
+      {% endif %}
+
+      {% if keyboard.number_of_keys %}
+      <div>
+	Keys: {{ keyboard.number_of_keys }}
+      </div>
       {% endif %}
 
       {% if keyboard.diodeless %}
