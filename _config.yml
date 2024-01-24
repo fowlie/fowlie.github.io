@@ -15,6 +15,6 @@ permalink: pretty
 paginate_path: /page:num
 
 collections:
-  ergomech-keyboards:
+  keyboards:
     output: true
     permalink: /:collection/:name

@@ -1,19 +1,29 @@
 ---
-title: ErgoMech Keyboards
+title: Keyboards
 layout: default
-permalink: /ergomech-keyboards/
+permalink: /keyboards/
 ---
-<h1>ErgoMech Keyboards</h1>
 
-Here is a list of {{ site.ergomech-keyboards | size }} open source ergosplit keyboards.
-It's nowhere a complete overview on what's out there,
-but I will be adding more and more whenever I have time.
+<h1>Keyboards</h1>
+
+One of my hobbies are mechanical keyboards, and the last few years its only been
+about open source ergonomic keyboards that you can actually build yourself. One
+of the advantages of this, besides the ergonomic part, is that now you can
+actually program the keyboard using a micro controller. That allows you to
+implement all kinds of crazy stuff, like having a repeat key that repeats the
+last keystroke, or like modifying CapsLock to toggle off once you hit a
+non-character symbol. Here is my curated list of {{ site.keyboards | size }}
+open source keyboards. It's nowhere a complete overview on what's out there, but
+I will be adding more and more whenever I have time.
 
 <section class="grid">
-  {% for keyboard in site.ergomech-keyboards %}
+  {% for keyboard in site.keyboards %}
   <keyboard>
     <a href="{{ keyboard.url }}">
-      <img class="img-thumbnail" src="/images/keyboards/{{ keyboard.slug }}.jpg" />
+      <img
+        class="img-thumbnail"
+        src="/images/keyboards/{{ keyboard.slug }}.jpg"
+      />
     </a>
     <div class="text">
       <a href="{{ keyboard.url }}">
@@ -26,42 +36,25 @@ but I will be adding more and more whenever I have time.
           /u/{{ keyboard.author_reddit }}
         </a>
       </i>
-      {% endif %}
-
-      {% if keyboard.author_github %}
+      {% endif %} {% if keyboard.author_github %}
       <i class="icon ion-social-github">
         <a href="https://github.com/user/{{ keyboard.author_github }}">
           {{ keyboard.author_github }}
         </a>
       </i>
+      {% endif %} {% if keyboard.number_of_keys %}
+      <div>Keys: {{ keyboard.number_of_keys }}</div>
+      {% endif %} {% if keyboard.diodeless %}
+      <div>Diodeless</div>
       {% endif %}
 
-      {% if keyboard.number_of_keys %}
-      <div>
-	Keys: {{ keyboard.number_of_keys }}
-      </div>
-      {% endif %}
+      <div>Controller: {{ keyboard.controller }}</div>
 
-      {% if keyboard.diodeless %}
-      <div>
-        Diodeless
-      </div>
-      {% endif %}
-
-      <div>
-        Controller: {{ keyboard.controller }}
-      </div>
-
-      <div>
-        Stagger: {{ keyboard.stagger }}
-      </div>
+      <div>Stagger: {{ keyboard.stagger }}</div>
 
       {% if keyboard.modules %}
-      <div>
-        Extra: {{ keyboard.modules }}
-      </div>
+      <div>Extra: {{ keyboard.modules }}</div>
       {% endif %}
-
     </div>
   </keyboard>
   {% endfor %}

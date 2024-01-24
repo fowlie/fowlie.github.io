@@ -106,7 +106,7 @@ soldering newbie like I am, make sure you read up on soldering before you start
 (I almost gave it up)! You can see more details in [my post on
 /r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/comments/vt32yo/my_first_build_cantor_remix).
 
-You can check out [my list of 36-keys keyboards](/ergomech-keyboards) I
+You can check out [my curated list of open source keyboards](/keyboards) I
 considered during this phase. This list only contains keyboards I like. Also,
 Manna Harbour (the creator of the Miryoku layout) has a [really good list
 here](https://github.com/stars/manna-harbour/lists/36-keys).
