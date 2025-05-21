@@ -1,5 +1,5 @@
 ---
-title: Fish Shell Abbreviations: Next Level Aliases
+title: Fish Shell Abbreviations - Next Level Aliases
 layout: post
 date: 2024-10-15 00:00:00 +0000
 comments: false
