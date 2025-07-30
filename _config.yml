@@ -13,8 +13,3 @@ permalink: pretty
 
 # Outputting
 paginate_path: /page:num
-
-collections:
-  keyboards:
-    output: true
-    permalink: /:collection/:name
