@@ -4,10 +4,10 @@ layout: default
 show_intro: true
 permalink: /aboutme/
 ---
-My passion for tech started when I wanted to build my own website at age 14. I quickly learned about HTML and JavaScript, then I touched into Perl, Pascal Delphi, and PHP. I took a bachelors degree in Embedded Systems at [HIBU](https://www.usn.no/om-hsn/campus/kongsberg) which focused on engineering, software and hardware.
+My passion for tech started when I wanted to build my own website at age 14. I quickly learned about HTML and JavaScript, then I touched into Perl, Pascal Delphi, and PHP. I took a bachelors degree in Embedded Systems focusing on computer science, software and hardware.
 
-I got my first developer job at an insurance company called If Insurance in 2008 where I developed an automated claims handling system on the [IBM WebSphere Process Server](https://www-01.ibm.com/software/integration/wps) platform. 4 years later, I started in a new project writing real Java code with [Apache Camel](http://camel.apache.org), and I remember this was the point in my life that I reeeally started nerding about programming.
+Since then I've been working as a software engineer in insurance and banking. I'm currently employed as a senior consultant at [Delta Consulting](https://www.deltaconsulting.no), where I work with a variety of clients on different projects. My expertise lies in backend development, particularly with Java and Spring Boot, but I also have experience with frontend technologies like React.
 
-Another 4 years later, march 2016, I took a job at the Norwegian Public Roads Administration. Here I'm developing in Ubuntu Linux, which is a totally different world than Windows, but so much better. I would never go back to Windows.
+My spare time mostly goes to my kids (I have 3 girls - 2, 8 and 10), but I also enjoy coding, reading, biking, running, drinking beer and occasionally building my own computer keyboard.
 
-In 2022 I started as an consultant in [ITverket](https://itverket.no), and I'm thrilled to join these awesome people!
+Music also has been a big part of my life, I've played my fender bass guitar in a wide range of bands and done hundreds of gigs over the years. Some time in the future I might play in a band again, but for now I just play at home.
