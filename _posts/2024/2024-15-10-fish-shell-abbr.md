@@ -2,7 +2,6 @@
 title: Fish Shell Abbreviations - Next Level Aliases
 layout: post
 date: 2024-10-15 00:00:00 +0000
-comments: false
 ---
 I've been using Fish shell for quite some time now, and it’s by far the most user-friendly command-line interface I've encountered. But what makes Fish different from other popular shells like Bash or Zsh? Fish enhances your command-line productivity without overwhelming you, thanks to its intuitive features and smart defaults. In this post, I’ll walk you through some of my favorite features that make Fish stand out.
 

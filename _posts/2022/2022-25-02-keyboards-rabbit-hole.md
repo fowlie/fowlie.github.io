@@ -2,7 +2,6 @@
 title: down the mechanical keyboard rabbit hole
 layout: post
 date: 2022-02-25 00:00:00 +0000
-comments: true
 
 ---
 <img src="/uploads/2022/moonlander.png" alt="moonlander" title="The Moonlander keyboard" class="img-fluid" />

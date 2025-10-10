@@ -2,7 +2,6 @@
 title: winning algorithm for tic tac toe using a 3x3 magic square
 layout: post
 date: 2018-08-24 00:00:00 +0000
-comments: true
 
 ---
 I'm not sure why I did this, but after reading about the 3x3 magic square I wanted to write a tic tac toe winning algorithm. If you haven't heard about it before, the 3x3 magic square is a matrix where the sum of every number in an edge or a diagonal equals to 15 (the magic number). So all you have to do is think of the playing board as a layered board where this picture is the bottom layer, and then the players can place their bricks on top of it. To determine if a player has won, all you need to do is find a combination of a players number from the magic square where the sum equals 15!![](/uploads/2018/08/24/3x3magicsquare.png "3x3 Magic Square")

@@ -1,7 +1,6 @@
 ---
 title: getting operation name from cxf interceptor
 layout: post
-comments: true
 ---
 In my current project we are using CXF and its logging interceptors to automatically log every inboud and outbound call to a web service. We have custom interceptor classes that extends LoggingInInterceptor and LoggingOutInterceptor, to be able to modify the log message. So we wanted to add the operation name so that we could index its value with [Logstash](https://www.elastic.co/products/logstash). As it turned out, CXF couldn't help us here since the interceptor is invoked in a phase where the operation name hasn't been evaluated yet.
 

@@ -2,7 +2,6 @@
 title: Two-factor the easy way with pass, GPG and TOTP
 layout: post
 date: 2025-10-10 00:00:00 +0000
-comments: true
 ---
 I’ve written before about using the Unix-friendly password manager “pass.” It’s still my favorite because it stays out of the way and plays nicely with the command line. This time, I’m taking it a step further: storing and generating 2FA codes (TOTP) with `pass`, backed by my GPG key. No more reaching for my phone just to log in.
 

@@ -2,7 +2,6 @@
 title: my first keyboard build
 layout: post
 date: 2022-08-15 00:00:00 +0000
-comments: true
 ---
 After my last blog post I gave up trying to find the perfect keymap layout.
 There are so many pitfalls when designing a layered keyboard keymap, and I just

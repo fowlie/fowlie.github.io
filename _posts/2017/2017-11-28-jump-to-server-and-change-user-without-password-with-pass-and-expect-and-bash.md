@@ -2,7 +2,6 @@
 title: jump to server and change user without passwords
 layout: post
 date: 2017-11-28 00:00:00 +0000
-comments: true
 ---
 At work we only get access to the application servers through a jumpserver. I was getting tired of typing my password all the time, so I started thinking about how to login without typing the password at all.
 

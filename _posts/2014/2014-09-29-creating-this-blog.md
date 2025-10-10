@@ -1,7 +1,6 @@
 ---
 title: creating this blog
 layout: post
-comments: true
 date: '2014-09-29T00:00:00.000+00:00'
 ---
 

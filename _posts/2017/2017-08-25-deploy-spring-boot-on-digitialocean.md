@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2017-08-24 20:00:07 +0200
 layout: post
 title: Deploy a Spring Boot webapp on DigitalOcean
